@@ -1,2 +1,2 @@
 # generateur-de-mots
-this repository is a frnch-like word generator.
+this repository is a french-like word generator.
