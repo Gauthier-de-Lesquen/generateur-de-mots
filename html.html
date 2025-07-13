@@ -1,0 +1,27 @@
+<body class="flex-center">
+    <div>
+        <div>
+            <input class="input" id="inputResultat" type="text" readonly> 
+            <button class="button" id="buttonGenerer" onclick="CreateWord()">générer</button>
+            <p id="p"></p>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="nomCo" name="word-type" value="nomCo" onchange="updateWordType('nomCo')" />
+            <label for="nomCo">nom commun</label>
+
+            <input type="radio" id="adj" name="word-type" value="adj" onchange="updateWordType('adj')" />
+            <label for="adj">adjectif</label>
+
+            <input type="radio" id="adv" name="word-type" value="adv" onchange="updateWordType('adv')" />
+            <label for="adv">adverbe</label>
+
+            <input type="radio" id="verbe" name="word-type" value="verbe" onchange="updateWordType('verbe')" />
+            <label for="verbe">verbe</label>
+
+            <input type="radio" id="other" name="word-type" value="other" onchange="updateWordType('other')" checked />
+            <label for="other">aléatoire</label>
+
+            <button class="button" id="buttonTelech" onclick="creerFichier()">télécharger les mots générés</button>
+        </div>
+    </div>
+</body>
