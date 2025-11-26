@@ -1,11 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Mots Français</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body class="flex-center">
     <div>
         <div>
-            <input class="input" id="inputResultat" type="text" readonly> 
+            <input class="input" id="inputResultat" type="text" readonly> <!-- word display / afficheur du mot -->
             <button class="button" id="buttonGenerer" onclick="CreateWord()">générer</button>
             <p id="p"></p>
         </div>
-        <div class="radio-group">
+        <div class="radio-group"> <!-- to select the type of word / pour choisir la nature du mot -->
             <input type="radio" id="nomCo" name="word-type" value="nomCo" onchange="updateWordType('nomCo')" />
             <label for="nomCo">nom commun</label>
 
@@ -24,4 +32,7 @@
             <button class="button" id="buttonTelech" onclick="creerFichier()">télécharger les mots générés</button>
         </div>
     </div>
+
+    <script src="main.js"></script>
 </body>
+</html>
